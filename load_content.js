@@ -1,5 +1,5 @@
 import fs from 'fs';
-const path = process.argv[1];
+const path = process.argv[2];
 
 export const getFileContents = (path) => {
     return new Promise((resolve, reject) => {
@@ -18,7 +18,7 @@ export const getFileContents = (path) => {
         if (stats && stats.size > 0) {
 
             // Read file contents and return, error if not
-            fs.readFile(path, (err, buffer) => {
+            fs.readFile(path, "utf8", (err, buffer) => {
                 if (err) {
                     reject(new Error('Error trying to get stats'));
                 }
