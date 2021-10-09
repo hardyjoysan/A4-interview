@@ -1,4 +1,4 @@
-# NodeJs Developer - Interview Question & Answers
+# Upwork A4 NodeJs - Questions & Answers
 
 ### Section 1
 
@@ -9,3 +9,10 @@ Abstract class is a class that can't be instantiated like other classes but it c
 #### 2. What is the purpose of getters and setters in a class?
 
 Getter is used to access any property of class instance. Setter is used to validate and mutate the getter property. So when while assigning a value to the property we could avoid creating any unexpected errors.
+
+### Section 2 - Testing
+
+#### 3. Explain the purpose of black box testing
+
+I'm not so quite familiar with this concept, I understand it as end-to-end automation used by QA with the help of tools like selenium or Jmeter. It is used to test the functionalities of an application working as expected.
+
