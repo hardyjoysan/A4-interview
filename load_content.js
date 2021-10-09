@@ -1,3 +1,5 @@
+'use strict';
+
 import fs from 'fs';
 const path = process.argv[2];
 
@@ -31,9 +33,12 @@ export const getFileContents = (path) => {
     });
 }
 
-getFileContents(path).then((data) => {
-    console.log(data);
-})
-.catch((err) => {
-    console.log(err);
-});
+
+if(path){
+    getFileContents(path).then((data) => {
+        console.log(data);
+    })
+    .catch((err) => {
+        console.log(err);
+    });
+}

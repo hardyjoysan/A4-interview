@@ -37,7 +37,11 @@ Any tasks output that doesn't rely on other results can be done asynchronously. 
 ### Section 4 - NodeJS coding
 
 ```bash
-$ node load_content.js
+$ node load_content.js sample.txt
 ```
 
 ### Section 5 - NodeJS coding with classes - Fruit Basket
+
+```bash
+$ node fruit_basket.js
+```
