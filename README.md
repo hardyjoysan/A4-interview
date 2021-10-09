@@ -26,3 +26,6 @@ One of the major benefits I felt is that it doesn't require any manual testing w
 
 It's a pattern in NodeJs wherein a callback function an error object is placed as the first argument and the remaining arguments will be associated data. This means we only need to process the data if there are no errors. There could be multiple data arguments but with this pattern, the developer understands where to look for errors.
 
+#### 6. Explain the difference between fs.readSync and fs.read (File System module in Nodejs)
+
+fs.read() and fs.readSync() are used to read file from fs.open() method. Difference between the two is that read is an asynchronous function that returns bytes and buffer in a callback(or promise) while readSync is synchronous and returns only the number of bytes read from the file descriptor.
