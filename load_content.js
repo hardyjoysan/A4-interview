@@ -20,7 +20,7 @@ export const getFileContents = (path) => {
             // Read file contents and return, error if not
             fs.readFile(path, "utf8", (err, buffer) => {
                 if (err) {
-                    reject(new Error('Error trying to get stats'));
+                    reject(new Error('Error reading file contents'));
                 }
                 resolve(buffer);
             })
