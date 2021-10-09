@@ -29,3 +29,7 @@ It's a pattern in NodeJs wherein a callback function an error object is placed a
 #### 6. Explain the difference between fs.readSync and fs.read (File System module in Nodejs)
 
 fs.read() and fs.readSync() are used to read file from fs.open() method. Difference between the two is that read is an asynchronous function that returns bytes and buffer in a callback(or promise) while readSync is synchronous and returns only the number of bytes read from the file descriptor.
+
+#### 7. What tasks do you feel should be done asynchronously?
+
+Any tasks output that doesn't rely on other results can be done asynchronously. For example updating data in the background, fetching data from other sources, writing a file, listening to an event, or emitting buffers, etc. could be done asynchronously.
