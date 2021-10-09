@@ -16,3 +16,7 @@ Getter is used to access any property of class instance. Setter is used to vali
 
 I'm not so quite familiar with this concept, I understand it as end-to-end automation used by QA with the help of tools like selenium or Jmeter. It is used to test the functionalities of an application working as expected.
 
+#### 4. In your opinion what are the benefits of test cases
+
+One of the major benefits I felt is that it doesn't require any manual testing while the development is in progress. Sometimes creating or changing codes can affect something previously developed and most of the time developers missed to check it. That could probably cause an error in the production server. Also working with a team can also rise such situations. In such situations, test cases provide great support to verify that all the developed functionalities working without any issues and can avoid breaking a production build.
+
